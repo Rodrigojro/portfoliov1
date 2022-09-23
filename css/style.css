@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@400;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*Navbar*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 999;
+    transition: all 0.35s ease;
+}
+
+.navbar.sticky {
+    background: rgb(110, 103, 2);
+    padding: 15px 0;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.navbar .logo a span {
+    color: rgb(110, 103, 2);
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: rgb(110, 103, 2);
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+}
+
+/* initial home */
+
+.home {
+    display: flex;
+    background: url(https://free4kwallpapers.com/uploads/originals/2020/09/11/firewatch-dark-version-wallpaper.jpg) no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: rgb(110, 103, 2);
+    font-weight: 500;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: rgb(110, 103, 2);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(110, 103, 2);
+}
+
+.home .home-content a:hover {
+    color: rgb(110, 103, 2);
+    background: none;
+}
+
+
+/*--Menu Mobile--*/
+.menu-btn {
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+/* repeated codes */
+
+.about,
+.specialty {
+    font-family: 'Roboto', sans-serif;
+}
+
+.about .about-content,
+.specialty .spec-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* About Session */
+section {
+    padding: 100px 0;
+}
+
+.about .title,
+.specialty .title {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 230px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.about .title::after {
+    content: "Who the f@#k i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    background: #fff;
+    color: rgb(110, 103, 2);
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: rgb(110, 103, 2);
+    font-weight: 700;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: rgb(110, 103, 2);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(110, 103, 2);
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: rgb(110, 103, 2);
+    background: none;
+}
+
+.about .about-content .left img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/*specialty session*/
+
+.specialty .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 230px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.specialty .title::after {
+    content: "O que eu faço";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    background: #fff;
+    color: rgb(110, 103, 2);
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.specialty .spec-content .column {
+    width: calc(50% - 30px);
+}
+
+.specialty .spec-content .left .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.specialty .spec-content .left p {
+    text-align: justify;
+}
+
+.specialty .spec-content .left a {
+    display: inline-block;
+    background: rgb(110, 103, 2);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(110, 103, 2);
+    transition: all 0.3s ease;
+}
+
+.specialty .spec-content .right .bars {
+    margin-bottom: 15px;
+
+}
+
+.specialty .spec-content .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.specialty .spec-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.specialty .spec-content .right .line {
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: relative;
+}
+
+.specialty .spec-content .right .line::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(110, 103, 2);
+}
+
+.specialty .spec-content .right .html::before {
+    width: 90%;
+}
+
+.specialty .spec-content .right .css::before {
+    width: 87%;
+}
+
+.specialty .spec-content .right .js::before {
+    width: 76%;
+}
+
+.specialty .spec-content .right .java::before {
+    width: 72%;
+}
+
+.specialty .spec-content .right .sql::before {
+    width: 56%;
+}
+
+
+/*responsividade*/
+
+@media (min-width: 1300px) {
+    .navbar .max-width {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1104px) {
+    .about .about-content .left img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+@media (min-width: 991px) {
+    .navbar .max-width {
+        padding: 50;
+    }
+}
+
+@media (max-width: 947px) {
+    .max-width {
+        max-width: 800px;
+        padding: 0 50px;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        top: 0;
+        background: #111;
+        padding-top: 80px;
+        text-align: center;
+        transition: all 0.3 ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .about .about-content .column {
+        width: 50%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+    }
+}
+
+@media (min-width: 690px) {
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+
+    .home .home-content a {
+        font-size: 20px;
+    }
+
+    .home .home-content a {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 690px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+
+}
